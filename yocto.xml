@@ -4,19 +4,20 @@
   <remote fetch="https://github.com/OSSystems" name="browser"/>
   <remote fetch="https://github.com/kraj" name="clang"/>
   <remote fetch="https://github.com/JeffyCN/" name="github"/>
+  <remote fetch="https://github.com/chaiwat-screencloud/" name="naam"/>
   <remote fetch="git://git.openembedded.org" name="oe"/>
   <remote fetch="https://github.com/meta-qt5" name="qt5"/>
   <remote fetch="https://github.com/meta-rust" name="rust"/>
   <remote fetch="git://git.yoctoproject.org" name="yocto"/>
-  
+
   <default revision="dunfell" sync-c="true" sync-j="8"/>
-  
+
   <project dest-branch="master" name="meta-browser" remote="browser" revision="a5a5f277740a8434377f9844c62574efb17a4fa0"/>
   <project dest-branch="dunfell" name="meta-clang" remote="clang" revision="e63d6f9abba5348e2183089d6ef5ea384d7ae8d8"/>
   <project dest-branch="dunfell" name="meta-openembedded" remote="oe" revision="11eae114522a6befa06c7f4021a83bc016133543"/>
   <project dest-branch="dunfell" name="meta-python2" remote="oe" revision="6b3000729ce3424c2aa8a03cd46ef37b200d2fc1"/>
   <project dest-branch="dunfell" name="meta-qt5" remote="qt5" revision="b4d24d70aca75791902df5cd59a4f4a54aa4a125"/>
-  <project dest-branch="master" name="meta-rockchip" remote="github" revision="0ea0ecb18298aad3c58d27e3b6517b8ed85e08ce"/>
+  <project dest-branch="master" name="meta-rockchip" remote="github" revision="25834c31b8981ce7c0239696912836da3bae2c0a"/>
   <project dest-branch="master" name="meta-rust" remote="rust" revision="494d879a1d337cda5b3a19406cabe46fcd3aee76"/>
   <project dest-branch="dunfell" name="poky" remote="yocto" revision="6ebb33bdaccaeadff0c85aab27acf35723df00d8">
     <linkfile dest="scripts" src="scripts"/>
@@ -25,5 +26,5 @@
     <linkfile dest=".templateconf" src=".templateconf"/>
     <linkfile dest="oe-init-build-env" src="oe-init-build-env"/>
   </project>
-  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="github" revision="8609d6a9cd0d947b69ec8b39d1a38f339d611636"/>
+  <extend-project dest-branch="master" name="yocto-conf" path="build/conf" remote="naam" revision="ada19e63fbf593405327d26a954a48287c9e1baa"/>
 </manifest>
